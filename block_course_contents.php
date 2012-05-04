@@ -142,8 +142,7 @@ class block_course_contents extends block_base {
                 } else {
                     $text .= html_writer::start_tag('li', array('class' => 'section-item r'.$odd));
                 }
-                $title = html_writer::tag('span', $i.' ', array('class' => 'section-number')).
-                         html_writer::tag('span', $title, array('class' => 'section-title'));
+                $title = html_writer::tag('span', $title, array('class' => 'section-title'));
                 if (!$displaysection or $displaysection != $i) {
                     $text .= html_writer::link($link.$i, $title, array('class' => $isvisible ? '' : 'dimmed'));
                 } else {
